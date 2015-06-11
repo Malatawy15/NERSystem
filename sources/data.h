@@ -32,10 +32,16 @@ public:
 		int num_cols = 0;
 		for (t_tokenizer::iterator beg = tokens.begin(); beg != tokens.end(); ++beg) {
 			printf("TOK: %s\n", (*beg).c_str());
+			column_titles_.push_back(*beg);
 			num_cols++;
 		}
 		printf("==============================\n");
 		while(file>>str) {
+			//input()
+			int j = num_cols-2;
+			while(j-- --> 0) {
+
+			}
 			printf("%s\n", str);
 		}
 	}
